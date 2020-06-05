@@ -1,0 +1,7 @@
+fastapi
+geoip2
+motor
+pydantic[email]
+python-multipart
+pymongo
+uvicorn
