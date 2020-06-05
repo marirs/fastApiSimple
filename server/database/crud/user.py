@@ -22,6 +22,9 @@ class UserDatabase:
         self._collection.create_index('api_key', unique=True)
         self._collection.create_index('email', unique=True)
 
+    async def count(self) -> int:
+        return await self._collection.count_documents({})
+        
     async def get(self, key: str, projection: dict = None) -> Optional[User]:
         user = await self._collection.find_one({'api_key': key}, projection=projection or self._projection)
         return self._user(**user) if user else None
