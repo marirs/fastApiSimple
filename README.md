@@ -1,6 +1,6 @@
 # fastAPI boilerplate
 
-This project is to user fastAPI with API Key in the URL Path. can be used for simple API microservices where JWT/API Header/etc. is not required
+This project is to use fastAPI with just an API Key in the URL Path. This can be used for simple API microservices where JWT/API Header/etc. is not required.
 
 #### Requirements
 - Python 3.8+
