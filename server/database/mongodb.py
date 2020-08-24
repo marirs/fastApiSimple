@@ -33,7 +33,7 @@ async def connect():
     except ServerSelectionTimeoutError:
         logger.error("Server Selection Timeout Error")
         sys.exit()
-    logger.info(f"Connected to mongo at {Config.MONGODB_URL}")
+    logger.info(f"Connected to MongoDB.")
 
 
 async def close():
